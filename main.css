@@ -1,0 +1,26 @@
+.otherApps { 
+    visibility: hidden;
+}
+
+div.sidebar div.sidebar-footer {
+    border-top: 0px;
+}
+
+div.o365cs-nav-appTitleLine {
+    visibility: hidden;
+}
+
+/* right link to all the apps*/
+#O365_MainLink_NavMenu_Responsive {
+    visibility: hidden;
+}
+
+/* left link to all the apps*/
+#O365_MainLink_NavMenu {
+    display: none;
+}
+
+/* left link to Outlook */
+#O365_MainLink_Logo {
+    display: none;
+}
