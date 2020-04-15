@@ -17,7 +17,7 @@ ifeq (, $(shell which $(NBIN)))
 .PHONY: install clean reset uninstall run
 
 $(app):
-	$(NBIN) --name $(NAME) --icon $(ICON) --platform $(PLATFORM) --arch $(ARCH) --counter --single-instance --inject ./main.css --disable-context-menu "https://to-do.office.com/login"
+	$(NBIN) --name $(NAME) --icon $(ICON) --platform $(PLATFORM) --arch $(ARCH) --counter --single-instance --inject ./main.css --disable-context-menu --internal-urls ".*?" "https://to-do.office.com/login"
 
 install: $(app) uninstall
 	cp -R ./$(NAME)*/$(NAME).app ~/Applications/
